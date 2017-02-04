@@ -6,8 +6,8 @@ class AddFishForm extends React.Component {
     const newFish = {
       name: this.fishName.value,
       price: this.fishPrice.value,
-      available: this.fishAvailability.value,
-      description: this.fishDescription.value,
+      status: this.fishAvailability.value,
+      desc: this.fishDescription.value,
       image: this.fishImage.value
     };
     console.log(newFish);
