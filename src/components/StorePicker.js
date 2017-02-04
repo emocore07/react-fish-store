@@ -4,8 +4,8 @@ import { getFunName } from '../helpers';
 class StorePicker extends React.Component {
   goToStore = (event) => {
     event.preventDefault(); // prevent form submit
-    console.log('You changed URL!');
     console.log(this.storeInput.value);
+    this.context.router.transitionTo(`store/${this.storeInput.value}`);
   }
 
   render() {
@@ -23,6 +23,11 @@ class StorePicker extends React.Component {
       </form>
     );
   }
+}
+
+// Добавляем router в контекст компонента StorePicker
+StorePicker.contextTypes = {
+  router: React.PropTypes.object
 }
 
 export default StorePicker;
