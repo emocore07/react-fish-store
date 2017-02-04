@@ -2,8 +2,9 @@
 // es6 modules, loads to bundle.js in development
 import React from 'react';
 import { render } from 'react-dom';
-import StorePicker from './components/StorePicker';
+import './css/style.css'; // Webpack will import it and provide hot-reload
+import App from './components/App';
 
 
 // #main is element in index.html, 'mounting point'
-render(<StorePicker/>, document.querySelector('#main'));
+render(<App/>, document.querySelector('#main'));
