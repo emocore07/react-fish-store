@@ -2,7 +2,7 @@
   "name": "cotd",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https:spajic.github.io/react-fish-store/",
+  "homepage": "https://spajic.github.io/react-fish-store/",
   "devDependencies": {
     "autoprefixer-stylus": "0.10.0",
     "concurrently": "3.0.0",
